@@ -15,8 +15,27 @@ var input = "hello"
 //function(s)
     //parameter is a string
     //first input is hello...
+    //for loop
     //set vowelCount = 0
-    //comparison operator (if)... if ("hello")
-
+    //comparison operator (if)... if (each character in the  input ) is a vowel to add count
     
 //logic//call function
+
+function countVowels (inStr) {
+    let vowelCount = 0;
+    for (let index = 0; index < inStr.length; index++) {
+        const element = inStr.toLowerCase()[index];
+        if (
+            element === "a" ||
+            element === "e" ||
+            element === "i" ||
+            element === "o" ||
+            element === "u"
+        ) {
+            vowelCount ++;
+        }
+        console.log(element);
+    } 
+    return vowelCount;
+}
+countVowels(input);
