@@ -35,7 +35,7 @@ function findFirst(searchString) {
           } else if (idx == searchArray.length - 1) {
               return element;
             }
-          
+        }   
       }
     }
   
